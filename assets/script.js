@@ -8,7 +8,10 @@ allGroupe.forEach((gb) => gb.addEventListener('click', (e)=>{
         if(regex.test(locat))
         {
             window.location.href = `emplois.php?groupe=${locat}`;
-        } 
+        }
+        else{
+            window.location.href = 'error.php';   
+        }
     }
 }))
 
